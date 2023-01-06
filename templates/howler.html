@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="/js/howler.js" type="module"></script>
+    <link rel="stylesheet" href="/css/howler.css" />
+    <title>Howler</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="navbar">
+            <ul class="navbar-nav mx-3">
+                <li class="nav-item active">
+                    <a class="nav-link" id="logout">Logout</a>
+                </li>
+            </ul>
+            <a class="navbar-brand" id="brandName" href="">
+                Howler
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-item nav-link" id="profileLink">@Username</a>
+                <img src="/img/profile.png" class="mx-2" height="35px" width="35px" id="profilePic" alt="Profile Pic">
+            </div>
+        </nav>
+
+        <div class="container p-5 mt-5 text-white rounded">
+            <form>
+                <div class="form-group form-control-sm border-dark">
+                    <textarea class="form-control border-dark" rows="4" id="newHowlText"
+                        placeholder="What's Howlin'?"></textarea>
+                    <button type="button" class="btn btn-secondary float-end mt-1" id="postHowlButton">Howl</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="howls" id="howls">
+            <!-- Appended howls go here -->
+        </div>
+    </div>
+</body>
+
+</html>
